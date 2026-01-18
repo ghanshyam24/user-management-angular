@@ -6,6 +6,6 @@ export const routes: Routes = [
         loadChildren: () =>
             import('./users/users.module').then(m => m.UsersModule)
     },
-    // { path: '', redirectTo: 'users', pathMatch: 'full' },  // root redirects to /users
+    { path: '', redirectTo: 'users', pathMatch: 'full' },  // root redirects to /users
     { path: '**', redirectTo: 'page-not-found' }                     // catch-all
 ];

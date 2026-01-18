@@ -1,4 +1,9 @@
 <h2>User List</h2>
+
+<button [routerLink]="['/users']">User List</button>
+<button [routerLink]="['/users/create']">Create User</button>
+<button [routerLink]="['/users/user-detail']">User Detail</button>
+
 <ul>
     <li *ngFor="let user of users">
         {{ user.id }}. {{ user.name }} - {{ user.email }}
